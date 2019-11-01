@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#street{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#road1{
+    border-top: 10px solid yellow;
+    border-bottom: 10px solid yellow;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+#road1::after{
+    content: '';
+    display: block;
+    width: 100%;
+    top: 50%;
+    position: relative;
+    height: 2px;
+    background-image: linear-gradient(to right, white 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 20vh 1px;
+    background-repeat: repeat-x;
+}
+#road2{
+    border-left: 10px solid yellow;
+    border-right: 10px solid yellow;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background-color: black;
+}
+#road2::after{
+    content: '';
+    display: block;
+    height: 100%;
+    left: 50%;
+    position: relative;
+    width: 2px;
+    background-image: linear-gradient(white 33%, rgba(255,255,255,0) 0%);
+    background-position: right;
+    background-size: 1px 20vh;
+    background-repeat: repeat-y;
+}
+#cover{
+    width: 100px;
+    height: 80px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background-color: black;
+    margin: auto;
+}
+.zebrahorizontal{
+    position: relative;
+    width: 100%;
+    height: 6%;
+    background-color: white;
+    margin: 10px 0;
+}
+.zebravertical{
+    position: relative;
+    height: 100%;
+    width: 6%;
+    background-color: white;
+    margin: 0 5px;
+    float: left;
+}
+#crosswalk1{
+    width: 80px;
+    /min-width: 50px;
+    height: 80px;
+    position: relative;
+    top: 50%;
+    transform: translate(-140%, -150%);
+    z-index: 3;
+    background-color: black;
+    margin: auto;
+    overflow: hidden;
+}
+
+#crosswalk2{
+    width: 80px;
+    /min-width: 50px;
+    height: 80px;
+    position: relative;
+    top: 50%;
+    transform: translate(140%, -250%);
+    z-index: 3;
+    background-color: black;
+    margin: auto;
+    overflow: hidden;
+}
+#crosswalk3{
+    width: 80px;
+    /min-width: 50px;
+    height: 80px;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -470%);
+    z-index: 3;
+    background-color: black;
+    margin: auto;
+    overflow: hidden;
+}
+#crosswalk4{
+    width: 80px;
+    /min-width: 50px;
+    height: 80px;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -330%);
+    z-index: 3;
+    background-color: black;
+    margin: auto;
+    overflow: hidden;
+}
+.lights{
+    position: absolute;
+    display: block;
+    z-index: 5;
+    width: 20px;
+    height: 60px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+.lights .light{
+    position: relative;
+    display: block;
+    z-index: 5;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 100%;
+    margin: 3px 4px 4px 1px;
+    border: .5px solid gray;
+}
+#lights1{
+    transform: translate(-1000%, 60%) rotate(90deg);
+}
+#lights2{
+    transform: translate(900%, -160%) rotate(-90deg);
+}
+#lights3{
+    transform: translate(280%, 230%);
+}
+#lights4{
+    transform: translate(-380%, -330%) rotate(-180deg);
+}
+.zebralights{
+    position: absolute;
+    display: block;
+    z-index: 5;
+    width: 14px;
+    height: 25px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+.zebralights .zebralight{
+    position: relative;
+    display: block;
+    z-index: 5;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
+    margin: 1px 1px 0 1px;
+    border: .5px solid gray;
+}
+#zebralights1{
+    transform: translate(-850%, -30%)
+}
+#zebralights2{
+    transform: translate(750%, -30%)
+}
+#zebralights3{
+    transform: translate(-60%, -430%)
+}
+#zebralights4{
+    transform: translate(-60%, 330%)
+}
+/*
+.zebraswitch{
+    position: absolute;
+    display: block;
+    z-index: 5;
+    width: 10px;
+    height: 10px;
+    background-color: skyblue;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+}
+#sw1{
+    transform: translate(-1500%, 550%);
+}
+#sw2{
+    transform: translate(-1500%, -650%);
+}
+#sw3{
+    transform: translate(1400%, -650%);
+}
+#sw4{
+    transform: translate(1400%, 550%);
+}
+#sw5{
+    transform: translate(600%, 1200%);
+}
+#sw6{
+    transform: translate(-650%, 1200%);
+}
+#sw7{
+    transform: translate(600%, -1300%);
+}
+#sw8{
+    transform: translate(-650%, -1300%);
+}
+*/
